@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Vertical Scroll -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ordersummaryback">
+
+    <!-- Horizontal scroll-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#27000000"
+        android:padding="5dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <!-- Image downloaded from flaticon <a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Freepik - Flaticon</a>-->
+            <!-- Background images downloaded from Pexels.com -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Summary"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#eb8334"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="164dp"
+                android:layout_height="52dp"
+                app:srcCompat="@drawable/pizzaslice" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#23000000"
+                android:padding="5dp"
+                android:layout_columnSpan="2"
+                android:columnCount="2">
+                <TextView
+                    android:id="@+id/pizzaSizeLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza Size:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/pizzaSizeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/pizzaAmountLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/pizzaAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/baseSauceLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Base Sauce:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/baseSauceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marinara"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/toppingsLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toppings:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/toppingsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="@color/white"
+                    android:maxWidth="200dp"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/spiceLevelLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spice Level:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/spiceLevelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Spice"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/dippingSauceLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Side Dressings:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/dippingSauceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="@color/white"
+                    android:maxWidth="200dp"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/deliveryLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Option:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/deliveryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Up"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nameLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/addressLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/addressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/phoneLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="phone"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/subTotalLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/subTotalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 $"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/totalLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/totalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 $"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/placeOrderBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Place Order"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+            <Button
+                android:id="@+id/editOrderBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Edit Order"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+        </GridLayout>
+    </HorizontalScrollView>
+</ScrollView>

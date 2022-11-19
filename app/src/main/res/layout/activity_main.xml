@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Vertical Scroll -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bestbackpic">
+
+    <!-- Horizontal scroll-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#27000000"
+        android:padding="5dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="6">
+
+            <!-- Image downloaded from flaticon <a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Freepik - Flaticon</a>-->
+            <!-- Background images downloaded from Pexels.com -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build your pizza"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#eb8334"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ordersListBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Orders"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+            <TextView
+                android:id="@+id/selectSizeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Select size"
+                android:textColor="#eb4f34"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/pizzaSizeDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-120dp"
+                android:backgroundTint="#eb4f34"
+                android:minHeight="40dp" />
+
+
+            <TextView
+                android:id="@+id/selectBaseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Select Base Sauce:"
+                android:textColor="#eb4f34"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnSpan="2"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:background="#23000000"
+                android:padding="5dp"
+                >
+                <RadioButton
+                    android:id="@+id/marinaraRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marinara"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/bbqRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BBQ"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/noBaseRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Sauce"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="164dp"
+                android:layout_height="146dp"
+                android:layout_marginStart="-80dp"
+                app:srcCompat="@drawable/sauces" />
+            <TextView
+                android:id="@+id/pizzaNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Pizzas:"
+                android:textColor="#eb4f34"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pizzaNumberEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Enter number"
+                android:inputType="number"
+                android:layout_marginStart="-45dp"
+                android:textColorHint="#78909C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizzaToppingsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Toppings (2$ each):"
+                android:layout_marginTop="10dp"
+                android:layout_columnSpan="2"
+                android:textColor="#eb4f34"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#23000000"
+                android:padding="5dp"
+                android:layout_columnSpan="2"
+                android:columnCount="3"
+                android:rowCount="2">
+                <CheckBox
+                    android:id="@+id/pepperoniCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pepperoni"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/mushroomCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mushroom"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/chickenCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/fetaCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feta"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/garlicCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Garlic"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/tomatoCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomato"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/selectSpiceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Spice Level:"
+                android:textColor="#eb4f34"
+                android:layout_marginEnd="10dp"
+                android:layout_columnSpan="2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#23000000"
+                android:padding="5dp"
+                >
+
+                    <RadioButton
+                        android:id="@+id/mildRadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mild"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/hotRadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hot"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/noSpiceRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Spice"
+                    android:checked="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="164dp"
+                android:layout_height="146dp"
+                android:layout_marginStart="-80dp"
+                app:srcCompat="@drawable/sauces" />
+            <TextView
+                android:id="@+id/sideDressingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Side Dressing (3$ each):"
+                android:layout_marginTop="10dp"
+                android:layout_columnSpan="2"
+                android:textColor="#eb4f34"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:background="#23000000"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/garlicSauceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Garlic Dip:"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#eb4f34"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/garlicSauceEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:text="0"
+                    android:inputType="number"
+                    android:textColorHint="#78909C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/ranchSauceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ranch Dip:"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#eb4f34"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ranchSauceEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:text="0"
+                    android:inputType="number"
+                    android:textColorHint="#78909C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/bbqSauceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BBQ Dip:"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#eb4f34"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/bbqSauceEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:text="0"
+                    android:inputType="number"
+                    android:textColorHint="#78909C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/hotSauceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot Dip:"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#eb4f34"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/hotSauceEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:text="0"
+                    android:inputType="number"
+                    android:textColorHint="#78909C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/orderDetailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Options"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#eb8334"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/image2View"
+                android:layout_width="164dp"
+                android:layout_height="52dp"
+                app:srcCompat="@drawable/pizzaslice" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#23000000"
+                android:padding="5dp"
+                >
+                <RadioButton
+                    android:id="@+id/pickupRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Up"
+                    android:checked="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/deliveryRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery (10$)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="-40dp"
+                app:srcCompat="@drawable/sauces" />
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Name:"
+                android:textColor="#eb4f34"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Enter name"
+                android:inputType="text"
+                android:layout_marginStart="-50dp"
+                android:textColorHint="#78909C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter address:"
+                android:textColor="#eb4f34"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Enter address"
+                android:inputType="text"
+                android:layout_marginStart="-50dp"
+                android:textColorHint="#78909C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter phone:"
+                android:textColor="#eb4f34"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Enter phone"
+                android:inputType="text"
+                android:layout_marginStart="-50dp"
+                android:textColorHint="#78909C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/errorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:text=""
+                android:background="#23000000"
+                android:padding="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_columnSpan="2"
+                android:textColor="#ff0000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/orderBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Checkout"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Reset Order"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+        </GridLayout>
+    </HorizontalScrollView>
+</ScrollView>

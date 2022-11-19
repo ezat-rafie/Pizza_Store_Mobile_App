@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PizzaAppAssignment2ER</string>
+    <string-array name="pizzaSize">
+        <item name="Small 10$">Small 10$</item>
+        <item name="Medium 12$">Medium 12$</item>
+        <item name="Large 14$">Large 14$</item>
+    </string-array>
+</resources>

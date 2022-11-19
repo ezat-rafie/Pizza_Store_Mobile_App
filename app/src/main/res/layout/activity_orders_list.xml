@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Vertical Scroll -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ordersummaryback">
+
+    <!-- Horizontal scroll-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#27000000"
+        android:padding="5dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <!-- Image downloaded from flaticon <a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Freepik - Flaticon</a>-->
+            <!-- Background images downloaded from Pexels.com -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Orders"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#eb8334"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="164dp"
+                android:layout_height="52dp"
+                app:srcCompat="@drawable/pizzaslice" />
+            <TextView
+                android:id="@+id/orderListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:background="#23000000"
+                android:layout_marginVertical="10dp"
+                android:layout_columnSpan="2"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/returnBtn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Return"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_orange_dark"/>
+
+        </GridLayout>
+    </HorizontalScrollView>
+</ScrollView>
